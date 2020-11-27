@@ -88,7 +88,7 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="col-md-6 mb-10">
-                                                            <input type="text" class="form-control" name="cnm" placeholder="Nama Sekolah">
+                                                            <input type="text" class="form-control" name="cnm" placeholder="Nama Agenda">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
                                                             <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
@@ -101,7 +101,7 @@
                                             <div class="row">
                                                 <table id="datable_1" class="table table-hover display  pb-30 dataTable" role="grid" aria-describedby="datable_1_info">
                                                     <thead>
-                                                        <tr role="row"><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width:10%; text-align: center;">No</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 20%;">Nama Sekolah</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 30%;">Keterangan</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 40%; text-align: center;">Aksi</th></tr>
+                                                        <tr role="row"><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width:10%; text-align: center;">No</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 20%;">Nama Agenda</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 30%;">Keterangan</th><th tabindex="0" aria-controls="datable_1" rowspan="1" colspan="1" style="width: 40%; text-align: center;">Aksi</th></tr>
                                                     </thead>
                                                     <tbody>
                                                         <?php $no = 1; ?>

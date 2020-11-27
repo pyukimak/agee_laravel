@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="button-list pull-right mb-10" style="">
+                    <div class="button-list pull-right mb-20" style="">
                         <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
                         <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-barcode"></i></button></a>
                         <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
@@ -98,12 +98,14 @@
                                                 <h6>{{ $a->nm_barang}}</h6>
                                                 <p class="text-primary">{{ $a->kode}}</p>
                                                 <span class="head-font block text-warning font-16">{{ $a->h_jual}}</span>
-                                                <form method="POST" action="{{ url('barang/detail/'.$a->id_barang)}}" enctype="multipart/form-data">
-                                                    @csrf
-												    <input type="hidden" name="id_barang" value="{{$a->id_barang}}">
-                                                    <button class="btn btn-primary btn-xs mb-10 ml-10" type="submit">Detail</button>
-                                                </form>
-                                                <button class="btn btn-primary btn-xs mb-10">Beli</button>
+                                                <div class="button-list">
+                                                    <form method="POST" action="{{ url('barang/detail/'.$a->id_barang)}}" enctype="multipart/form-data">
+                                                        @csrf
+                                                        <input type="hidden" name="id_barang" value="{{$a->id_barang}}">
+                                                        <button class="btn btn-primary btn-xs mb-10 ml-5" type="submit">Detail</button>
+                                                        <button class="btn btn-primary btn-xs mb-10">Beli</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </article>
                                     </div>

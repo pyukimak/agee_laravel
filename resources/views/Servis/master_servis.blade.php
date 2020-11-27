@@ -38,7 +38,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Kategori">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#kategori"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -64,8 +64,8 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_kategori" value="{{$a->id_kategori}}">
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#kategori"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
-                                                                            <a href="{{ url('a/edit/'.$a->id_kategori) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -96,7 +96,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Kelengkapan">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#kelengkapan"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -121,7 +121,7 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_kelengkapan" value="{{$a->id_kelengkapan}}">
-                                                                            <a href="{{ url('a/edit/'.$a->id_kelengkapan) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#kelengkapan"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
                                                                         </div>
                                                                     </form>
@@ -153,7 +153,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Jenis">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#jenis"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -178,7 +178,7 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_jenisbrg" value="{{$a->id_jenisbrg}}">
-                                                                            <a href="{{ url('a/edit/'.$a->id_jenisbrg) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#jenis"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
                                                                         </div>
                                                                     </form>
@@ -210,7 +210,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Kondisi">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#kondisi"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -235,7 +235,7 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_kondisipart" value="{{$a->id_kondisipart}}">
-                                                                            <a href="{{ url('a/edit/'.$a->id_kondisipart) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#kondisi"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
                                                                         </div>
                                                                     </form>
@@ -267,7 +267,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Rak">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#rak"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -292,7 +292,7 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_rak" value="{{$a->id_rak}}">
-                                                                            <a href="{{ url('a/edit/'.$a->id_rak) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#rak"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
                                                                         </div>
                                                                     </form>
@@ -324,7 +324,7 @@
                                                             <input type="text" class="form-control" name="cnm" placeholder="Nama Kategori Jasa">
                                                         </div>
                                                         <div class="col-md-6 mb-10">
-                                                            <a href="{{ url('/sdm/tambah') }}"><button class="btn btn-success btn-circle btn-sm"><i class="fa fa-plus"></i></button></a>
+                                                            <button type="button" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#jasa"><i class="fa fa-plus"></i></button>
                                                             <a href="/rekanan"><button class="btn btn-warning btn-circle btn-sm" type="button"><i class="fa fa-refresh"></i></button></a>
                                                             <button class="btn btn-info btn-icon-anim btn-circle btn-sm" type="button" data-toggle="collapse" data-target="#serch" aria-expanded="true" aria-controls="serch"><i class="fa fa-search"></i></button>
                                                         </div>
@@ -349,7 +349,7 @@
                                                                         @csrf
                                                                         <div class="btn-group">
                                                                             <input type="hidden" name="id_jasa" value="{{$a->id_jasa}}">
-                                                                            <a href="{{ url('a/edit/'.$a->id_jasa) }}"><button aria-expanded="false" class="btn btn-warning btn-xs" type="button"><i class="fa fa-pencil"></i></button></a>
+                                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#jasa"><i class="fa fa-pencil"></i></button>
                                                                             <button type="submit" aria-expanded="false" class="btn btn-danger btn-xs" type="button"><i class="fa fa-trash"></i></button>
                                                                         </div>
                                                                     </form>
@@ -370,6 +370,126 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal kategori -->
+        <div class="modal fade" id="kategori" tabindex="-1" aria-labelledby="kategoriLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kategoriLabel">Tambah / Edit Kategori</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal kelengkapan -->
+        <div class="modal fade" id="kelengkapan" tabindex="-1" aria-labelledby="kelengkapanLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kelengkapanLabel">Tambah / Edit Kelengkapan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal jenis -->
+        <div class="modal fade" id="jenis" tabindex="-1" aria-labelledby="jenisLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jenisLabel">Tambah / Edit Jenis</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal kondisi -->
+        <div class="modal fade" id="kondisi" tabindex="-1" aria-labelledby="kondisiLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kondisiLabel">Tambah / Edit Kondisi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal rak -->
+        <div class="modal fade" id="rak" tabindex="-1" aria-labelledby="rakLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rakLabel">Tambah / Edit Rak</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal jasa -->
+        <div class="modal fade" id="jasa" tabindex="-1" aria-labelledby="jasaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jasaLabel">Tambah / Edit Jasa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
                 </div>
             </div>
         </div>

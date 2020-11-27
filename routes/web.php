@@ -57,6 +57,7 @@ Route::get('/rekanan','rekanan@index');
 Route::get('/rekanan/kelompok','rekanan@kelompok');
 
 Route::get('/barang','barang@index');
+Route::get('/barang/master','barang@master');
 Route::get('/barang/grid','barang@indexgrid');
 Route::post('/barang/detail/{id}','barang@detail');
 

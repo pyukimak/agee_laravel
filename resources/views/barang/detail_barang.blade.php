@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="item-big">
-                                    <img style="width: 450px; height: 260px; display:block; margin-top:55px; margin-left:auto; margin-right:auto;" src="{{$a->foto_barang == '' ? asset('uploads/285x355.jpg') : asset('uploads/small_'.$a->foto_barang)}}" class="img-responsive" alt="Image description">
+                                    <img style="width: 450px; height: 260px; display:block; margin-top:55px; margin-left:auto; margin-right:auto;" src="{{$a->foto_barang == '' ? asset('uploads/noimage.png') : asset('uploads/small_'.$a->foto_barang)}}" class="img-responsive" alt="Image description">
                                     </div>
                                 </div>
                                 <div class="col-md-7">
@@ -21,9 +21,9 @@
                                             <div class="col-md-6">
                                                 <p>Kode Barang	: {{ $a->kode }}</p>
                                                 <p>Stok Tersedia	: {{ $a->stok_b}} {{ $a->nm_sat}}</p>
-                                                <p>Merk : {{ $a->kode }}</p>
-                                                <p>Kategori : {{ $a->kode }}</p>
-                                                <p>Jenis Barang : {{ $a->kode }}</p>
+                                                <p>Merk : {{ $a->nm_merk }}</p>
+                                                <p>Kategori : {{ $a->nm_kat }}</p>
+                                                <p>Jenis Barang : {{ $a->nama_jenisbrg }}</p>
                                                 
                                             </div>
                                             <div class="col-md-6">
